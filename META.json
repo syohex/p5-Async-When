@@ -42,6 +42,7 @@
       },
       "runtime" : {
          "requires" : {
+            "Mouse" : "0",
             "perl" : "5.008005"
          }
       },
