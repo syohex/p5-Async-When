@@ -99,7 +99,7 @@ __END__
 
 =head1 NAME
 
-Async::When - It's new $module
+Async::When - Perl Port of when.js
 
 =head1 SYNOPSIS
 
@@ -107,7 +107,45 @@ Async::When - It's new $module
 
 =head1 DESCRIPTION
 
-Async::When is ...
+Async::When is Perl port of Javascript Library when.js.
+The API is kept as close to the original as possible.
+
+This is currently a minimal implementation.
+
+=head1 INTERFACES
+
+=head2 Funcional Interface
+
+=head3 When(@values or $promise)
+
+Returns a promise. If the argument is already a promise, it is returned. Otherwise,
+a new promise is created and immediately resolved with the provided value.
+
+=head2 Class Interfaces
+
+=head3 Async::When::defer
+
+Create a deferred object, equivalent to C<Async::When::Deferred->new>.
+The deferred can be split in its resolver and promise parts for better encapsulation.
+
+=head3 Async::When::resolve(@values)
+
+Create a deferred and immediately resolves it with C<@values>, then returns the promise.
+
+=head3 Async::When::reject(@values)
+
+Create a deferred and immediately rejects it with C<@values>, then returns the promise.
+
+=head3 Async::When::all(@promises)
+
+Takes promises or deferreds and returns promise that will either reject when the
+first promise rejects, or resolve when all promises have resolved.
+
+=head1 SEE ALSO
+
+L<https://github.com/cujojs/when>
+
+L<https://github.com/cjohansen/when-rb>
 
 =head1 LICENSE
 

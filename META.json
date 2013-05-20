@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Perl Port of when.js",
    "author" : [
       "Syohei YOSHIDA <syohex@gmail.com>"
    ],
