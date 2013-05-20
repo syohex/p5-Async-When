@@ -52,5 +52,16 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/syohex/p5-Async-When/issues"
+      },
+      "homepage" : "https://github.com/syohex/p5-Async-When",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/syohex/p5-Async-When.git",
+         "web" : "https://github.com/syohex/p5-Async-When"
+      }
+   },
    "version" : "0.01"
 }
